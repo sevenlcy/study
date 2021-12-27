@@ -1,0 +1,12 @@
+#include<stdio.h>
+#define PI 3.14159    /*常量--圆周率*/
+int main(void)        /*计算圆的面积，周长*/
+{
+	float area, circum, radius;   /*圆的面积，周长，半径*/
+	printf("Please input radius:  \n");
+	scanf_s("%f", &radius);       /*输入数据*/
+	area =  PI * radius*radius;   /*计算*/
+	circum = 2 * PI * radius;
+	printf("area=%.2f,cricum=%f\n", area, circum);   /*输出数据*/
+	return 0;
+}
