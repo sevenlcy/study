@@ -1,0 +1,24 @@
+#include<stdio.h>
+void Calculate(int number);/*定义函数*/
+int main(void)
+{
+	int number;
+
+	printf("Enter the number：");
+	scanf_s("%d", &number);
+	while (number > 0)
+	{
+		Calculate(number);/*函数调用时需注意*/
+		printf("Enter the next number：");
+		scanf_s("%d", &number);
+	}
+
+	return 0;
+}
+
+void Calculate(int number)
+{
+	int num_1;
+	num_1= number * number * number;
+	printf("The cubed of this number is %d.\n", num_1);	
+}
